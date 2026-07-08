@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sample-part",
+    "title": "Sample Part",
+    "summary": "One-line card text",
+    "description": "Longer text for the detail page",
+    "tool": "fusion360",
+    "model": "/models/sample-part.glb",
+    "downloads": [{ "label": "STEP", "path": "/models/sample-part.step" }],
+    "images": [],
+    "tags": ["bracket", "aluminum"],
+    "date": "2026-06"
+  }
+]

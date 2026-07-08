@@ -1,0 +1,109 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-h);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 75% 65% at 72% 50%, rgba(223, 123, 24, 0.07) 0%, transparent 68%);
+}
+
+.dots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(26, 25, 22, 0.07) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 65% 65% at 72% 50%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 65% 65% at 72% 50%, black, transparent);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--accent-bg);
+  border: 1px solid rgba(223, 123, 24, 0.22);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.32rem 0.85rem;
+  border-radius: 100px;
+  margin-bottom: 1.6rem;
+}
+.pill span {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 6.5vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.0;
+  margin-bottom: 1.2rem;
+}
+.name em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.desc {
+  color: var(--text-2);
+  font-size: 1.0rem;
+  max-width: 520px;
+  margin-bottom: 2.2rem;
+  line-height: 1.7;
+}
+
+.btns {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.statN {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.statL {
+  font-size: 0.75rem;
+  color: var(--text-3);
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 820px) {
+  .name {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .stats {
+    gap: 1.5rem;
+  }
+}

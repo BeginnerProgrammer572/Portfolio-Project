@@ -1,0 +1,102 @@
+.page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.back:hover {
+  color: #fff;
+}
+
+.page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 1.5rem;
+}
+
+.viewer {
+  width: 100%;
+  height: 60vh;
+  background: #0a0a0a;
+  border: 1px solid #222;
+  margin-bottom: 2rem;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.description {
+  color: #bbb;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.downloads h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555;
+  margin: 0 0 0.75rem;
+}
+
+.downloadBtn {
+  display: inline-block;
+  margin-right: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.downloadBtn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.25rem 0.6rem;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #666;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.meta {
+  color: #444;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
