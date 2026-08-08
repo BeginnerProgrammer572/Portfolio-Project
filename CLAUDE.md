@@ -4,13 +4,14 @@ Read this before touching any code in this repo.
 
 ## What this is
 Bryan's personal portfolio site. Public, no login gate. Deploys to
-Cloudflare Pages. GitHub: github.com/BeginnerProgrammer572/Portfolio-Project
+Vercel. GitHub: github.com/BeginnerProgrammer572/Portfolio-Project
 
 ## Stack (locked — do not re-decide)
 - Next.js 14, App Router, JavaScript only (no TypeScript)
 - React 18
 - Tailwind CSS 3
-- Deployment target: Cloudflare Pages
+- Deployment target: Vercel (switched from Cloudflare Pages — no adapter
+  needed, App Router + API routes work natively)
 - Backend: one API route only — `app/api/contact/route.js`
 - No database
 
@@ -78,8 +79,10 @@ rather than fabricate placeholders.
 
 ## Contact form
 `app/api/contact/route.js` — validates name/email/message, honeypot
-field, per-IP rate limiting. Email delivery via Resend still deferred —
-prints to console in dev.
+field, per-IP rate limiting. Sends via Resend (plain fetch call, no SDK
+dependency) when `RESEND_API_KEY` and `CONTACT_TO_EMAIL` are both set;
+falls back to console.log in dev when either is unset. Visitor's email
+is set as `reply_to`. See `.env.example` for the required vars.
 
 ## Scope violations / rejected outputs log
 - 2026-08-07: First redesign pass (an "engineering drawing sheet" theme
