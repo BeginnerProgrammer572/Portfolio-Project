@@ -45,6 +45,7 @@ const RELEASES = [
     title: 'Kern Opportunity Finder',
     description:
       'Matches Kern County students to scholarships, internships, and events by interest — built for a regional student tech conference. Tech lead on a collaborative team; handled most of the build, mentored teammates new to web dev.',
+    link: 'https://github.com/BeginnerProgrammer572/kern-opportunity-finder',
     patches: [{ version: 'v2.0.1', bullets: ['CSF Induction — California Scholarship Federation'] }],
   },
   {
