@@ -1,23 +1,17 @@
-import Nav from './components/Nav';
+import RepoHeader from './components/RepoHeader';
 import Hero from './components/Hero';
-import About from './components/About';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Cad from './components/Cad';
-import Awards from './components/Awards';
+import ReleaseFeed from './components/ReleaseFeed';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <RepoHeader />
       <Hero />
-      <About />
       <Skills />
-      <Projects />
-      <Cad />
-      <Awards />
+      <ReleaseFeed />
       <Contact />
       <Footer />
     </>

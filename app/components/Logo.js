@@ -8,7 +8,7 @@ export default function Logo({ size = 36, className = '' }) {
       alt="BAS monogram"
       width={size}
       height={size}
-      className={`rounded-full ${className}`}
+      className={`rounded-full border border-border ${className}`}
     />
   );
 }

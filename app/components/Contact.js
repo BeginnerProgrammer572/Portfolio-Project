@@ -36,29 +36,29 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="border-t border-white/10 px-6 py-20">
+    <section id="contact" className="px-6 py-14">
       <div className="mx-auto max-w-2xl">
-        <p className="section-label mb-4">Spec — 007 / Contact</p>
-        <h2 className="mb-8 font-display text-3xl font-bold text-paper">Contact</h2>
+        <p className="mb-4 font-mono text-xs uppercase tracking-widest text-muted">// contact</p>
+        <h2 className="mb-8 text-xl font-semibold text-ink">Get in touch</h2>
         <form onSubmit={handleSubmit} className="space-y-5">
           <input type="text" name="website" value={form.website} onChange={handleChange} tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
           <div>
-            <label htmlFor="name" className="mb-1 block font-mono text-xs uppercase tracking-widest text-slate">Name</label>
-            <input id="name" name="name" type="text" required value={form.name} onChange={handleChange} className="w-full rounded-sm border border-white/20 bg-white/5 px-3 py-2 text-paper outline-none focus:border-trace" />
+            <label htmlFor="name" className="mb-1 block font-mono text-xs uppercase tracking-widest text-muted">Name</label>
+            <input id="name" name="name" type="text" required value={form.name} onChange={handleChange} className="w-full rounded-md border border-border bg-canvas px-3 py-2 text-ink outline-none focus:border-link" />
           </div>
           <div>
-            <label htmlFor="email" className="mb-1 block font-mono text-xs uppercase tracking-widest text-slate">Email</label>
-            <input id="email" name="email" type="email" required value={form.email} onChange={handleChange} className="w-full rounded-sm border border-white/20 bg-white/5 px-3 py-2 text-paper outline-none focus:border-trace" />
+            <label htmlFor="email" className="mb-1 block font-mono text-xs uppercase tracking-widest text-muted">Email</label>
+            <input id="email" name="email" type="email" required value={form.email} onChange={handleChange} className="w-full rounded-md border border-border bg-canvas px-3 py-2 text-ink outline-none focus:border-link" />
           </div>
           <div>
-            <label htmlFor="message" className="mb-1 block font-mono text-xs uppercase tracking-widest text-slate">Message</label>
-            <textarea id="message" name="message" required rows={5} value={form.message} onChange={handleChange} className="w-full rounded-sm border border-white/20 bg-white/5 px-3 py-2 text-paper outline-none focus:border-trace" />
+            <label htmlFor="message" className="mb-1 block font-mono text-xs uppercase tracking-widest text-muted">Message</label>
+            <textarea id="message" name="message" required rows={5} value={form.message} onChange={handleChange} className="w-full rounded-md border border-border bg-canvas px-3 py-2 text-ink outline-none focus:border-link" />
           </div>
-          <button type="submit" disabled={status === 'sending'} className="rounded-sm bg-trace px-5 py-2.5 font-mono text-sm font-medium uppercase tracking-widest text-blueprint transition-opacity hover:opacity-90 disabled:opacity-50">
+          <button type="submit" disabled={status === 'sending'} className="rounded-md bg-link px-5 py-2.5 font-mono text-sm font-medium text-canvas transition-opacity hover:opacity-90 disabled:opacity-50">
             {status === 'sending' ? 'Sending…' : 'Send message'}
           </button>
-          {status === 'success' && <p className="font-mono text-sm text-trace">Sent — thanks, I'll get back to you.</p>}
-          {status === 'error' && <p className="font-mono text-sm text-copper">{errorMsg}</p>}
+          {status === 'success' && <p className="font-mono text-sm text-diffgreen">Sent — thanks, I'll get back to you.</p>}
+          {status === 'error' && <p className="font-mono text-sm text-tagrobotics">{errorMsg}</p>}
         </form>
       </div>
     </section>
