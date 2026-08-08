@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <>
       <RepoHeader />
-      <Hero />
-      <Skills />
-      <ReleaseFeed />
-      <Contact />
+      <main>
+        <Hero />
+        <Skills />
+        <ReleaseFeed />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

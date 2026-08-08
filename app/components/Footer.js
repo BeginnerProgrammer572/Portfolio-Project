@@ -8,8 +8,13 @@ export default function Footer() {
           <Logo size={24} />
           <p className="font-mono text-xs text-muted">© {new Date().getFullYear()} Bryan Sobalvarro</p>
         </div>
-        <a href="https://github.com/BeginnerProgrammer572" target="_blank" rel="noreferrer" className="font-mono text-xs text-link hover:underline">
-          github.com/BeginnerProgrammer572
+        <a
+          href="https://github.com/BeginnerProgrammer572"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-sm font-mono text-xs text-link hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link"
+        >
+          github.com/BeginnerProgrammer572<span className="sr-only"> (opens in new tab)</span>
         </a>
       </div>
     </footer>

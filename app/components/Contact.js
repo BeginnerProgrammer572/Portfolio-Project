@@ -44,17 +44,17 @@ export default function Contact() {
           <input type="text" name="website" value={form.website} onChange={handleChange} tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
           <div>
             <label htmlFor="name" className="mb-1 block font-mono text-xs uppercase tracking-widest text-muted">Name</label>
-            <input id="name" name="name" type="text" required value={form.name} onChange={handleChange} className="w-full rounded-md border border-border bg-canvas px-3 py-2 text-ink outline-none focus:border-link" />
+            <input id="name" name="name" type="text" required value={form.name} onChange={handleChange} className="w-full rounded-md border border-muted bg-canvas px-3 py-2 text-ink outline-none focus-visible:border-link focus-visible:ring-2 focus-visible:ring-link/40" />
           </div>
           <div>
             <label htmlFor="email" className="mb-1 block font-mono text-xs uppercase tracking-widest text-muted">Email</label>
-            <input id="email" name="email" type="email" required value={form.email} onChange={handleChange} className="w-full rounded-md border border-border bg-canvas px-3 py-2 text-ink outline-none focus:border-link" />
+            <input id="email" name="email" type="email" required value={form.email} onChange={handleChange} className="w-full rounded-md border border-muted bg-canvas px-3 py-2 text-ink outline-none focus-visible:border-link focus-visible:ring-2 focus-visible:ring-link/40" />
           </div>
           <div>
             <label htmlFor="message" className="mb-1 block font-mono text-xs uppercase tracking-widest text-muted">Message</label>
-            <textarea id="message" name="message" required rows={5} value={form.message} onChange={handleChange} className="w-full rounded-md border border-border bg-canvas px-3 py-2 text-ink outline-none focus:border-link" />
+            <textarea id="message" name="message" required rows={5} value={form.message} onChange={handleChange} className="w-full rounded-md border border-muted bg-canvas px-3 py-2 text-ink outline-none focus-visible:border-link focus-visible:ring-2 focus-visible:ring-link/40" />
           </div>
-          <button type="submit" disabled={status === 'sending'} className="rounded-md bg-link px-5 py-2.5 font-mono text-sm font-medium text-canvas transition-opacity hover:opacity-90 disabled:opacity-50">
+          <button type="submit" disabled={status === 'sending'} className="rounded-md bg-link px-5 py-2.5 font-mono text-sm font-medium text-canvas transition-opacity hover:opacity-90 disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink">
             {status === 'sending' ? 'Sending…' : 'Send message'}
           </button>
           {status === 'success' && <p className="font-mono text-sm text-diffgreen">Sent — thanks, I'll get back to you.</p>}

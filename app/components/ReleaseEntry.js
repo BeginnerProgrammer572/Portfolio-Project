@@ -111,15 +111,15 @@ export default function ReleaseEntry({ entry, isLast }) {
           )}
 
           {patches?.map((patch) => (
-            <div key={patch.version} className="mt-3 border-l-2 border-border pl-3">
+            <div key={patch.version} className="mt-3 border-l-2 border-diffgreen pl-3">
               <p className="font-mono text-xs text-muted">{patch.version}</p>
               <ul className="mt-1 space-y-1">
                 {patch.bullets.map((b) => (
                   <li
                     key={b}
-                    className="rounded bg-diffgreenbg/60 px-2 py-1 font-mono text-xs text-diffgreen"
+                    className="rounded border border-diffgreen bg-diffgreenbg px-2 py-1 font-mono text-xs text-ink"
                   >
-                    + {b}
+                    <span className="text-diffgreen">+</span> {b}
                   </li>
                 ))}
               </ul>

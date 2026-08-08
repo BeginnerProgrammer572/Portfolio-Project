@@ -14,7 +14,7 @@ module.exports = {
         diffgreenbg: '#DAFBE1',
         tagrobotics: '#BC4C00',
         tagcad: '#8250DF',
-        tagembedded: '#0E8A6E',
+        tagembedded: '#0B6E58',
       },
       fontFamily: {
         sans: [
