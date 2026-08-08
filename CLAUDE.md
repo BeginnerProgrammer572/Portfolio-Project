@@ -62,11 +62,19 @@ static render fallback — bring that back when next working on this
 section. Onshape can export GLB directly; no Blender step needed.
 
 ## Design system
-Blueprint/schematic aesthetic — navy background (#0B1B2B), teal trace
-accent (#4FD1C5), copper secondary accent (#C97C4A), paper text
-(#F4F1E8), slate secondary text (#8B98A5). Space Grotesk (display), Inter
-(body), JetBrains Mono (labels/data). All real photos, no stock imagery —
-crop/process what's real rather than fabricate placeholders.
+Changelog / GitHub Releases concept (replaced the earlier blueprint/
+schematic navy theme — see log below). Light developer-tool palette:
+canvas `#FFFFFF`, panel `#F6F8FA`, border `#D8DEE4`, ink `#14171A`, muted
+`#59636E`, link `#0B6FDA` (also the `[software]` tag color), diffgreen
+`#1A7F37` (patch/diff `+` lines), tagrobotics `#BC4C00`, tagcad `#8250DF`,
+tagembedded `#0E8A6E`. System UI font stack for body/headings, JetBrains
+Mono for version tags/hashes/dates/tag badges/the package.json block. The
+whole site is one continuous page — repo header (`RepoHeader.js`) → intro
+(`Hero.js`) → skills as a `package.json` block (`Skills.js`) → a semver
+release timeline (`ReleaseFeed.js`/`ReleaseEntry.js`) covering every
+project/CAD/robotics/award/next-up item as tagged entries, newest first →
+contact. All real photos, no stock imagery — crop/process what's real
+rather than fabricate placeholders.
 
 ## Contact form
 `app/api/contact/route.js` — validates name/email/message, honeypot
@@ -74,4 +82,8 @@ field, per-IP rate limiting. Email delivery via Resend still deferred —
 prints to console in dev.
 
 ## Scope violations / rejected outputs log
-(Add entries here as they come up.)
+- 2026-08-07: First redesign pass (an "engineering drawing sheet" theme
+  — title blocks, dimension lines, drafting sheet numbering) was
+  rejected before implementation in favor of the changelog/Releases
+  concept above. Don't resurrect the drafting-sheet direction without
+  Bryan asking for it again.
