@@ -1,9 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Bryan Sobalvarro — Portfolio',
-  description:
-    'Robotics, embedded systems, and software — VEX Robotics, the Almond Project, ESP32 PID control, and CAD work.',
+  title: 'bryansobalvarro / portfolio',
+  description: 'Robotics, embedded systems, and software — shipped in the open.',
 };
 
 export default function RootLayout({ children }) {
@@ -13,11 +12,11 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="bg-blueprint text-paper font-body">{children}</body>
+      <body className="bg-canvas text-ink font-sans">{children}</body>
     </html>
   );
 }
