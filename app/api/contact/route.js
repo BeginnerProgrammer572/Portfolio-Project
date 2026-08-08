@@ -61,8 +61,40 @@ export async function POST(request) {
   }
 
   const resendKey = process.env.RESEND_API_KEY;
-  if (resendKey) {
-    // TODO (post-demo): swap in a real Resend API call here using resendKey.
+  const toEmail = process.env.CONTACT_TO_EMAIL;
+
+  if (resendKey && toEmail) {
+    try {
+      const emailRes = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${resendKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from: 'Portfolio Contact <onboarding@resend.dev>',
+          to: toEmail,
+          reply_to: email,
+          subject: `New message from ${name}`,
+          text: `From: ${name} <${email}>\n\n${message}`,
+        }),
+      });
+
+      if (!emailRes.ok) {
+        const errText = await emailRes.text();
+        console.error('Resend send failed:', emailRes.status, errText);
+        return NextResponse.json(
+          { ok: false, error: 'Could not send your message right now. Please try again shortly.' },
+          { status: 502 }
+        );
+      }
+    } catch (err) {
+      console.error('Resend request error:', err);
+      return NextResponse.json(
+        { ok: false, error: 'Could not send your message right now. Please try again shortly.' },
+        { status: 502 }
+      );
+    }
   } else {
     console.log('\n--- Contact Form Submission ---');
     console.log(`From: ${name} <${email}>`);
