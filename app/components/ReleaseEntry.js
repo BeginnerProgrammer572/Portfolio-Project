@@ -85,7 +85,13 @@ export default function ReleaseEntry({ entry, isLast }) {
                     {img.filename}
                   </p>
                   <div className="relative aspect-[4/3] w-full bg-panel">
-                    <Image src={img.src} alt={img.alt} fill className="object-contain" />
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="object-contain"
+                    />
                   </div>
                 </figure>
               ))}
