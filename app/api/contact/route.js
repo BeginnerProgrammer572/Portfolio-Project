@@ -55,6 +55,13 @@ async function verifyTurnstile(token, ip) {
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_LENGTH = { name: 100, email: 254, message: 5000 };
+
+function isValidEmail(email) {
+  if (typeof email !== 'string') return false;
+  const trimmed = email.trim();
+  return trimmed.length > 0 && trimmed.length <= MAX_LENGTH.email && EMAIL_RE.test(trimmed);
+}
 
 export async function POST(request) {
   let body;
@@ -70,16 +77,24 @@ export async function POST(request) {
     return NextResponse.json({ ok: true });
   }
 
-  if (typeof name !== 'string' || name.trim().length === 0) {
+  if (
+    typeof name !== 'string' ||
+    name.trim().length === 0 ||
+    name.trim().length > MAX_LENGTH.name
+  ) {
     return NextResponse.json({ ok: false, error: 'name is required' }, { status: 422 });
   }
-  if (typeof email !== 'string' || !EMAIL_RE.test(email)) {
+  if (!isValidEmail(email)) {
     return NextResponse.json(
       { ok: false, error: 'a valid email is required' },
       { status: 422 }
     );
   }
-  if (typeof message !== 'string' || message.trim().length === 0) {
+  if (
+    typeof message !== 'string' ||
+    message.trim().length === 0 ||
+    message.trim().length > MAX_LENGTH.message
+  ) {
     return NextResponse.json({ ok: false, error: 'message is required' }, { status: 422 });
   }
 
