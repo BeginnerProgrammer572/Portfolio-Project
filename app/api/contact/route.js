@@ -22,6 +22,38 @@ function getClientIp(request) {
   return request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
 }
 
+const TURNSTILE_VERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
+
+async function verifyTurnstile(token, ip) {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret) {
+    // Not configured yet — behave like the Resend fallback and let requests
+    // through rather than breaking the form during setup.
+    return true;
+  }
+  if (typeof token !== 'string' || !token) {
+    return false;
+  }
+
+  try {
+    const params = new URLSearchParams({ secret, response: token });
+    if (ip && ip !== 'unknown') {
+      params.set('remoteip', ip);
+    }
+
+    const verifyRes = await fetch(TURNSTILE_VERIFY_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params,
+    });
+    const data = await verifyRes.json();
+    return data.success === true;
+  } catch (err) {
+    console.error('Turnstile verification request failed:', err);
+    return false;
+  }
+}
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request) {
@@ -32,7 +64,7 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, error: 'invalid JSON' }, { status: 400 });
   }
 
-  const { name, email, message, website = '' } = body ?? {};
+  const { name, email, message, website = '', turnstileToken } = body ?? {};
 
   if (website) {
     return NextResponse.json({ ok: true });
@@ -54,6 +86,14 @@ export async function POST(request) {
   const ip = getClientIp(request);
   if (isRateLimited(ip)) {
     return NextResponse.json({ ok: false, error: 'Too many requests' }, { status: 429 });
+  }
+
+  const turnstileOk = await verifyTurnstile(turnstileToken, ip);
+  if (!turnstileOk) {
+    return NextResponse.json(
+      { ok: false, error: 'Verification failed. Please try again.' },
+      { status: 422 }
+    );
   }
 
   const resendKey = process.env.RESEND_API_KEY;
