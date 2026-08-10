@@ -3,23 +3,39 @@
 import { useState } from 'react';
 import ReleaseEntry from './ReleaseEntry';
 
-const TAGS = ['software', 'robotics', 'cad', 'embedded'];
+const PRIMARY_TAGS = ['software', 'cad', 'robotics'];
+const PRIMARY_LABELS = { software: 'Software', cad: 'CAD', robotics: 'Robotics' };
+const PRIMARY_TAB_STYLES = {
+  software: {
+    active: 'border-link text-link',
+    inactive: 'border-transparent text-muted hover:text-link',
+  },
+  cad: {
+    active: 'border-tagcad text-tagcad',
+    inactive: 'border-transparent text-muted hover:text-tagcad',
+  },
+  robotics: {
+    active: 'border-tagrobotics text-tagrobotics',
+    inactive: 'border-transparent text-muted hover:text-tagrobotics',
+  },
+};
+const SECONDARY_TAGS = ['embedded'];
 
 const RELEASES = [
   {
     kind: 'unreleased',
-    tags: ['embedded', 'software'],
+    tags: ['embedded', 'software', 'robotics'],
     items: [
       {
         title: 'ESP32 PID Ball Balancer',
         status: 'Planned',
-        tag: 'embedded',
+        tags: ['embedded', 'robotics'],
         description: 'Ultrasonic sensor and servo balancing a ball on a hinged beam. PID math from scratch.',
       },
       {
         title: 'Coding Curriculum Guide',
         status: 'Idea stage',
-        tag: 'software',
+        tags: ['software'],
         description: 'VEX IQ + V5 programming guide, blocks through C++, for students just starting robotics.',
       },
     ],
@@ -110,22 +126,43 @@ export default function ReleaseFeed() {
   return (
     <section id="releases" className="border-b border-border px-6 py-14">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-8 flex flex-wrap items-center gap-2">
-          <p className="mr-2 font-mono text-xs uppercase tracking-widest text-muted">Releases</p>
-          <button
-            type="button"
-            onClick={() => setFilter(null)}
-            className={`rounded-full border px-2.5 py-1 font-mono text-xs transition-colors focus-visible:outline focus-visible:outline-link ${
-              filter === null ? 'border-ink text-ink' : 'border-border text-muted hover:text-ink'
-            }`}
-          >
-            All
-          </button>
-          {TAGS.map((t) => (
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
+          <div className="flex flex-wrap items-baseline gap-6">
+            <p className="font-mono text-xs uppercase tracking-widest text-muted">Releases</p>
+            <nav className="flex flex-wrap gap-5" aria-label="Filter releases by category">
+              <button
+                type="button"
+                onClick={() => setFilter(null)}
+                aria-pressed={filter === null}
+                className={`border-b-2 px-1 pb-1 font-mono text-sm transition-colors focus-visible:outline focus-visible:outline-link ${
+                  filter === null ? 'border-ink font-semibold text-ink' : 'border-transparent font-normal text-muted hover:text-ink'
+                }`}
+              >
+                All
+              </button>
+              {PRIMARY_TAGS.map((t) => (
+                <button
+                  type="button"
+                  key={t}
+                  onClick={() => setFilter(t)}
+                  aria-pressed={filter === t}
+                  className={`border-b-2 px-1 pb-1 font-mono text-sm transition-colors focus-visible:outline focus-visible:outline-link ${
+                    filter === t
+                      ? `${PRIMARY_TAB_STYLES[t].active} font-semibold`
+                      : `${PRIMARY_TAB_STYLES[t].inactive} font-normal`
+                  }`}
+                >
+                  {PRIMARY_LABELS[t]}
+                </button>
+              ))}
+            </nav>
+          </div>
+          {SECONDARY_TAGS.map((t) => (
             <button
               type="button"
               key={t}
               onClick={() => setFilter(t)}
+              aria-pressed={filter === t}
               className={`rounded-full border px-2.5 py-1 font-mono text-xs transition-colors focus-visible:outline focus-visible:outline-link ${
                 filter === t ? 'border-ink text-ink' : 'border-border text-muted hover:text-ink'
               }`}

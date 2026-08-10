@@ -55,7 +55,9 @@ export default function ReleaseEntry({ entry, isLast }) {
                 <div className="flex flex-wrap items-baseline gap-2">
                   <span className="font-mono text-sm text-diffgreen">+ {item.title}</span>
                   <span className="font-mono text-[11px] uppercase text-muted">{item.status}</span>
-                  <TagBadge tag={item.tag} />
+                  {item.tags.map((t) => (
+                    <TagBadge key={t} tag={t} />
+                  ))}
                 </div>
                 <p className="mt-1 text-sm text-muted">{item.description}</p>
               </li>
