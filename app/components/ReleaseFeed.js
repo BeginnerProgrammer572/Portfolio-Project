@@ -80,7 +80,7 @@ const RELEASES = [
     patches: [
       {
         version: 'v1.1.1',
-        bullets: ['BC AutoCAD Competition — Industrial Drawing & Architecture, placed against 10th–12th graders'],
+        bullets: ['BC AutoCAD Competition — Industrial Drawing & Architecture, competed against 10th–12th graders'],
       },
     ],
   },
