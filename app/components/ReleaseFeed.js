@@ -66,8 +66,21 @@ const RELEASES = [
   },
   {
     kind: 'release',
-    version: 'v1.2.0',
+    version: 'v1.3.0',
     status: 'latest',
+    hash: 'd61a9c3',
+    date: '11th grade',
+    tags: ['software'],
+    title: 'Programming the 2026–27 VEX season',
+    description:
+      "Writing the robot's C++ for the Override season: PID control and autonomous routines on PROS.",
+    link: 'https://github.com/BeginnerProgrammer572/24904F-Override-Code',
+    linkLabel: 'View code →',
+  },
+  {
+    kind: 'release',
+    version: 'v1.2.0',
+    status: 'shipped',
     hash: 'b4e7f02',
     date: 'Summer 2026',
     tags: ['robotics', 'embedded'],
