@@ -90,6 +90,24 @@ const RELEASES = [
   },
   {
     kind: 'release',
+    version: 'v1.2.0',
+    status: 'shipped',
+    hash: 'c38f1e4',
+    date: '10th grade',
+    tags: ['robotics'],
+    title: 'Qualified for VEX State',
+    description:
+      'Judges Award at regionals earned a state berth; Build Award and a quarterfinal run at VEX State.',
+    patches: [
+      {
+        version: 'v1.2.1',
+        grade: '10th grade',
+        bullets: ['Judges Award — VEX regionals; qualified to state', 'Build Award — VEX State; quarterfinal'],
+      },
+    ],
+  },
+  {
+    kind: 'release',
     version: 'v1.1.0',
     status: 'shipped',
     hash: 'a3f9c21',
