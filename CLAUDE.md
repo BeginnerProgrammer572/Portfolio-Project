@@ -38,6 +38,21 @@ project," etc. Get the collaboration status right per project (some are
 solo, some are team, some are "sharing ideas with someone building the
 same thing separately") — don't default to team framing everywhere.
 
+## Accuracy facts (locked)
+- Enrollment: dual-enrolled at CSUB. Never claim Bakersfield College
+  enrollment.
+- VEX: Judges Award was at regionals (qualified to state). Build Award was
+  at State, not regionals — keep these as two separate lines, never
+  merged.
+- AutoCAD competition: competed against 10th–12th graders — never imply a
+  placement/ranking.
+- Almond Project: private client work. No images, sample data,
+  parcel/field/client names, or link — ever — until Bryan says otherwise.
+- Kern Opportunity Finder: no conference/event mention. Status stays as-is
+  until told to mark it Paused.
+- ESP32 PID Ball Balancer: stays "Planned" (work starts November 2026).
+- Do not add STEM Pathfinder or the Congressional App Challenge.
+
 ## Portfolio content — selection criteria
 Not every project Bryan works on belongs here. Weigh whether a project
 actually shows skills/real work, not just school involvement:
