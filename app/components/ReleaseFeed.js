@@ -102,7 +102,10 @@ const RELEASES = [
           'Workforce Readiness Certificate — Boys & Girls Club of Kern County',
         ],
       },
-      { version: 'v1.0.2', bullets: ['Judges Award + Build Award — VEX regionals, qualified to state'] },
+      {
+        version: 'v1.0.2',
+        bullets: ['Judges Award — VEX regionals; qualified to state', 'Build Award — VEX State'],
+      },
     ],
   },
   {
