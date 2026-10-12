@@ -109,6 +109,15 @@ const RELEASES = [
         grade: '10th grade',
         bullets: ['Added pneumatics to the robot'],
       },
+      {
+        version: 'v1.2.3',
+        grade: '10th grade',
+        bullets: [
+          'Started programming the robot in C++',
+          'Set up a second team: funding, parts, ideas, and team assembly',
+          '~$6K in parts orders',
+        ],
+      },
     ],
   },
   {
