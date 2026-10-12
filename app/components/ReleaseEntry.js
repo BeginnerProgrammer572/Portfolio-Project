@@ -39,7 +39,8 @@ function StatusBadge({ status }) {
 }
 
 export default function ReleaseEntry({ entry, isLast }) {
-  const { kind, version, status, hash, date, tags, title, description, link, patches, images, items } = entry;
+  const { kind, version, status, hash, date, tags, title, description, link, linkLabel, patches, images, items } =
+    entry;
   const dotClass = kind === 'unreleased' ? DOT_STYLES.unreleased : DOT_STYLES[status];
 
   return (
@@ -86,7 +87,7 @@ export default function ReleaseEntry({ entry, isLast }) {
                 rel="noreferrer"
                 className="font-mono text-xs text-link hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link"
               >
-                View repo →<span className="sr-only"> (opens in new tab)</span>
+                {linkLabel ?? 'View repo →'}<span className="sr-only"> (opens in new tab)</span>
               </a>
             </p>
           )}
