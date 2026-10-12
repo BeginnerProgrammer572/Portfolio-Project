@@ -115,7 +115,10 @@ export default function ReleaseEntry({ entry, isLast }) {
 
           {patches?.map((patch) => (
             <div key={patch.version} className="mt-3 border-l-2 border-diffgreen pl-3">
-              <p className="font-mono text-xs text-muted">{patch.version}</p>
+              <p className="font-mono text-xs text-muted">
+                {patch.version}
+                {patch.grade ? ` · ${patch.grade}` : ''}
+              </p>
               <ul className="mt-1 space-y-1">
                 {patch.bullets.map((b) => (
                   <li

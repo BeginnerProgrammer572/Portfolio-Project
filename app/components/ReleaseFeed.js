@@ -91,6 +91,7 @@ const RELEASES = [
     patches: [
       {
         version: 'v1.1.1',
+        grade: '10th grade',
         bullets: ['BC AutoCAD Competition — Industrial Drawing & Architecture, competed against 10th–12th graders'],
       },
     ],
@@ -110,6 +111,7 @@ const RELEASES = [
     patches: [
       {
         version: 'v1.0.1',
+        grade: '9th grade',
         bullets: [
           'Judges Award — VEX regionals',
           'Workforce Readiness Certificate — Boys & Girls Club of Kern County',
@@ -117,6 +119,7 @@ const RELEASES = [
       },
       {
         version: 'v1.0.2',
+        grade: '10th grade',
         bullets: ['Judges Award — VEX regionals; qualified to state', 'Judges Award — VEX State; quarterfinal'],
       },
     ],
@@ -131,7 +134,7 @@ const RELEASES = [
     title: 'Got into robotics',
     description:
       "Joined a month late and was my team's top coder within a week. Block-based code to Python to competitive C++ from there.",
-    patches: [{ version: 'v0.1.1', bullets: ['CTEC Certification — Entrepreneurial Mindset'] }],
+    patches: [{ version: 'v0.1.1', grade: '8th grade', bullets: ['CTEC Certification — Entrepreneurial Mindset'] }],
   },
 ];
 
