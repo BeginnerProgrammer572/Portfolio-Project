@@ -59,11 +59,14 @@ same thing separately") — don't default to team framing everywhere.
 - A second VEX team was set up in 10th grade (funding, parts, ideas,
   team assembly).
 - All of these started in 11th grade, not earlier: learning PID control
-  and motor encoders in depth, Onshape/CAD work, digital engineering
-  notebooking, the 0-period robotics class, the club's first outside
-  sponsor, and the Money Dolly fundraising campaign.
-- AutoCAD competition: competed against 10th–12th graders — never imply a
-  placement/ranking.
+  and motor encoders in depth, digital engineering notebooking, the
+  0-period robotics class, the club's first outside sponsor, and the
+  Money Dolly fundraising campaign.
+- Onshape practice happened over the summer before 11th grade; regular
+  use began in 11th grade. Never frame Onshape as 10th-grade team/
+  season work.
+- AutoCAD: competed in 10th grade, certification not yet earned. Never
+  imply a placement/ranking or that certification is complete.
 - Almond Project: private client work. No images, sample data,
   parcel/field/client names, or link — ever — until Bryan says otherwise.
 - Kern Opportunity Finder: no conference/event mention. Status stays as-is
