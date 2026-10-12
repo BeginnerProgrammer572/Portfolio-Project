@@ -175,7 +175,10 @@ const RELEASES = [
       {
         version: 'v1.0.2',
         grade: '9th grade',
-        bullets: ['~$15K in parts orders, with extra funding from the CDE Academy'],
+        bullets: [
+          'Started programming the robot in C++',
+          '~$15K in parts orders, funded by the district, the CDE Academy, and club fundraisers',
+        ],
       },
     ],
   },
