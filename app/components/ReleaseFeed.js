@@ -70,12 +70,24 @@ const RELEASES = [
     status: 'latest',
     hash: 'd61a9c3',
     date: '11th grade',
-    tags: ['software'],
+    tags: ['software', 'robotics', 'cad'],
     title: 'Programming the 2026–27 VEX season',
     description:
       "Writing the robot's C++ for the Override season: PID control and autonomous routines on PROS.",
     link: 'https://github.com/BeginnerProgrammer572/24904F-Override-Code',
     linkLabel: 'View code →',
+    patches: [
+      {
+        version: 'v1.4.1',
+        grade: '11th grade',
+        bullets: [
+          'Main CAD designer in Onshape',
+          'Started digital engineering notebooking',
+          'Mentoring newer members',
+          '~$9K in parts orders so far; 10+ orders (~$30K) since 9th grade',
+        ],
+      },
+    ],
   },
   {
     kind: 'release',
