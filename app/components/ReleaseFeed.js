@@ -104,6 +104,11 @@ const RELEASES = [
         grade: '10th grade',
         bullets: ['Judges Award — VEX regionals; qualified to state', 'Build Award — VEX State; quarterfinal'],
       },
+      {
+        version: 'v1.2.2',
+        grade: '10th grade',
+        bullets: ['Added pneumatics to the robot'],
+      },
     ],
   },
   {

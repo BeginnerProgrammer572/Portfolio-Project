@@ -46,6 +46,7 @@ same thing separately") — don't default to team framing everywhere.
   and Build Award at State.
 - Quarterfinals result was at VEX State, 10th grade.
 - No odometry claims anywhere.
+- Team began using pneumatics in 10th grade.
 - AutoCAD competition: competed against 10th–12th graders — never imply a
   placement/ranking.
 - Almond Project: private client work. No images, sample data,
