@@ -107,6 +107,11 @@ const RELEASES = [
         grade: '10th grade',
         bullets: ['BC AutoCAD Competition — Industrial Drawing & Architecture, competed against 10th–12th graders'],
       },
+      {
+        version: 'v1.1.2',
+        grade: '10th grade',
+        bullets: ['Judges Award — VEX regionals; qualified to state', 'Build Award — VEX State; quarterfinal'],
+      },
     ],
   },
   {
