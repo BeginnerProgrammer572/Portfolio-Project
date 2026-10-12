@@ -6,7 +6,7 @@ export default function Hero() {
           Robotics, embedded systems, and software — shipped in the open.
         </p>
         <p className="mt-2 font-mono text-sm text-muted">
-          Junior · Foothill HS, CDE Academy · dual-enrolled at Bakersfield College
+          Junior · Foothill HS, CDE Academy · dual-enrolled at CSUB
         </p>
       </div>
     </section>
