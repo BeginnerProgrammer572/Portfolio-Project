@@ -65,9 +65,13 @@ actually shows skills/real work, not just school involvement:
   real to show: ESP32 PID Ball Balancer (planned), Coding Curriculum
   Guide (idea stage — merges the Bakersfield Robotics curriculum idea and
   the VEX programming guide idea)
-- **Left off entirely:** Code Ninjas (job, not a project), VEX 11th-grade
-  prep (school prep, not a discrete project), the Portfolio Project itself
-  (self-referential), habit/goal tracker (idea stage, nothing built)
+- **Left off entirely:** Code Ninjas (job, not a project), the Portfolio
+  Project itself (self-referential), habit/goal tracker (idea stage,
+  nothing built)
+- **Exception — v1.3.0 only:** the "Programming the 2026–27 VEX season"
+  release entry (11th grade, PROS/C++ work, linked to the code repo) is
+  allowed. Still no season prep, event lists, roster, or notebook details
+  anywhere on the site.
 
 Revisit this list as projects change status — a "planned" item that gets
 built should move up to a full card; check the actual current status
