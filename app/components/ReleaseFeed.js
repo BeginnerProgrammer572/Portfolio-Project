@@ -141,7 +141,7 @@ const RELEASES = [
     tags: ['robotics'],
     title: "Founded Foothill HS's VEX club",
     description:
-      'Team lead — parts procurement, event logistics, mentoring newer members, and most of the C++ programming: PID control and autonomous routines. Secured ~$2,000 to launch the team; 10+ parts orders (~$30K total) since 9th grade; main CAD designer in Onshape.',
+      'Founded the team and secured ~$3,000 in district funding to launch it. Team lead: parts procurement and event logistics.',
     patches: [
       {
         version: 'v1.0.1',
@@ -150,6 +150,11 @@ const RELEASES = [
           'Judges Award — VEX regionals',
           'Workforce Readiness Certificate — Boys & Girls Club of Kern County',
         ],
+      },
+      {
+        version: 'v1.0.2',
+        grade: '9th grade',
+        bullets: ['~$15K in parts orders, with extra funding from the CDE Academy'],
       },
     ],
   },
