@@ -119,8 +119,6 @@ const RELEASES = [
     title: "Founded Foothill HS's VEX club",
     description:
       'Team lead — parts procurement, event logistics, mentoring newer members, and most of the C++ programming: PID control, odometry, autonomous routines. Secured ~$2,000 to launch the team; 10+ parts orders (~$30K total) since 9th grade; main CAD designer in Onshape.',
-    link: 'https://github.com/BeginnerProgrammer572/24904F-Override-Code',
-    linkLabel: 'View code →',
     patches: [
       {
         version: 'v1.0.1',
