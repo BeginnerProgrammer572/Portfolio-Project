@@ -112,7 +112,7 @@ const RELEASES = [
     status: 'shipped',
     hash: 'a3f9c21',
     date: '10th grade',
-    tags: ['cad', 'robotics'],
+    tags: ['cad'],
     title: 'Added CAD to the toolchain',
     description: 'Started modeling drivetrains in Onshape, with dimensioned drawings in AutoCAD.',
     images: [
@@ -124,11 +124,6 @@ const RELEASES = [
         version: 'v1.1.1',
         grade: '10th grade',
         bullets: ['BC AutoCAD Competition — Industrial Drawing & Architecture, competed against 10th–12th graders'],
-      },
-      {
-        version: 'v1.1.2',
-        grade: '10th grade',
-        bullets: ['Judges Award — VEX regionals; qualified to state', 'Build Award — VEX State; quarterfinal'],
       },
     ],
   },
