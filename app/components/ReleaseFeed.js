@@ -66,7 +66,7 @@ const RELEASES = [
   },
   {
     kind: 'release',
-    version: 'v1.3.0',
+    version: 'v1.4.0',
     status: 'latest',
     hash: 'd61a9c3',
     date: '11th grade',
@@ -79,7 +79,7 @@ const RELEASES = [
   },
   {
     kind: 'release',
-    version: 'v1.2.0',
+    version: 'v1.3.0',
     status: 'shipped',
     hash: 'b4e7f02',
     date: 'Summer 2026',
