@@ -111,7 +111,7 @@ const RELEASES = [
       {
         version: 'v1.0.1',
         bullets: [
-          'Judges Award — VEX regionals, quarterfinal',
+          'Judges Award — VEX regionals',
           'Workforce Readiness Certificate — Boys & Girls Club of Kern County',
         ],
       },
