@@ -47,6 +47,15 @@ same thing separately") — don't default to team framing everywhere.
 - Quarterfinals result was at VEX State, 10th grade.
 - No odometry claims anywhere.
 - Team began using pneumatics in 10th grade.
+- District funding: ~$3,000 (9th grade), used to launch the team.
+- Parts-order spending by grade: ~$15K in 9th grade (incl. CDE Academy
+  funding), ~$6K in 10th grade, ~$9K in 11th grade so far; ~$30K
+  lifetime total. Never attribute these totals to the wrong grade.
+- C++ programming and pneumatics started in 10th grade, not 9th.
+- A second VEX team was set up in 10th grade (funding, parts, ideas,
+  team assembly).
+- PID control, Onshape/CAD work, and digital engineering notebooking
+  all started in 11th grade, not 9th or 10th.
 - AutoCAD competition: competed against 10th–12th graders — never imply a
   placement/ranking.
 - Almond Project: private client work. No images, sample data,
