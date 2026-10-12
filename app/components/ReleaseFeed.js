@@ -142,9 +142,14 @@ const RELEASES = [
     date: '10th grade',
     tags: ['cad'],
     title: 'Added CAD to the toolchain',
-    description: 'Started modeling drivetrains in Onshape, with dimensioned drawings in AutoCAD.',
+    description:
+      'Practiced Onshape CAD over the summer. Made dimensioned drawings in AutoCAD for the season.',
     images: [
-      { src: '/photos/cad-render.jpg', alt: 'Onshape render of the VEX drivetrain', filename: 'cad-render.jpg' },
+      {
+        src: '/photos/cad-render.jpg',
+        alt: 'Rendered CAD model of a VEX drivetrain, from summer Onshape practice',
+        filename: 'cad-render.jpg',
+      },
       { src: '/photos/cad-drawing.jpg', alt: 'Dimensioned AutoCAD drawing', filename: 'cad-drawing.jpg' },
     ],
     patches: [
