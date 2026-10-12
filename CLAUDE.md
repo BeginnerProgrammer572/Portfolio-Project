@@ -41,9 +41,9 @@ same thing separately") — don't default to team framing everywhere.
 ## Accuracy facts (locked)
 - Enrollment: dual-enrolled at CSUB. Never claim Bakersfield College
   enrollment.
-- VEX awards, exactly: 9th grade — Judges Award at regionals. 10th grade —
-  Judges Award at regionals (qualified to state), and a second Judges
-  Award at State. No Build Award, ever.
+- VEX awards, exactly: 9th grade — Judges Award at regionals (only
+  award). 10th grade — Judges Award at regionals (qualified to state),
+  and Build Award at State.
 - Quarterfinals result was at VEX State, 10th grade.
 - AutoCAD competition: competed against 10th–12th graders — never imply a
   placement/ranking.
