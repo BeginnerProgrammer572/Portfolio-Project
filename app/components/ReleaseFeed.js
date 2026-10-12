@@ -125,7 +125,7 @@ const RELEASES = [
         version: 'v1.2.3',
         grade: '10th grade',
         bullets: [
-          'Started programming the robot in C++',
+          'Moved to PROS (C++) for the State season',
           'Set up a second team: funding, parts, ideas, and team assembly',
           '~$6K in parts orders',
         ],
