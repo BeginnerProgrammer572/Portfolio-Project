@@ -84,7 +84,7 @@ const RELEASES = [
     hash: 'b4e7f02',
     date: 'Summer 2026',
     tags: ['robotics', 'embedded'],
-    title: 'Taught robotics at a summer camp',
+    title: 'Taught robotics, circuits, and hydraulics with Bakersfield Robotics and a CSUB professor',
     description:
       'Designed the programming challenge for two merged summer programs (~15 students, ~30 hours). Mentored a group of 3 building an ESP32/servo robot and a hydraulic arm; taught PID and C++ one-on-one.',
   },
