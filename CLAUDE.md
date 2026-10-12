@@ -45,6 +45,7 @@ same thing separately") — don't default to team framing everywhere.
   award). 10th grade — Judges Award at regionals (qualified to state),
   and Build Award at State.
 - Quarterfinals result was at VEX State, 10th grade.
+- No odometry claims anywhere.
 - AutoCAD competition: competed against 10th–12th graders — never imply a
   placement/ranking.
 - Almond Project: private client work. No images, sample data,
