@@ -117,7 +117,7 @@ const RELEASES = [
       },
       {
         version: 'v1.0.2',
-        bullets: ['Judges Award — VEX regionals; qualified to state', 'Build Award — VEX State'],
+        bullets: ['Judges Award — VEX regionals; qualified to state', 'Judges Award — VEX State'],
       },
     ],
   },
