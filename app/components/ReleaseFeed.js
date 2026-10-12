@@ -70,7 +70,7 @@ const RELEASES = [
     status: 'latest',
     hash: 'd61a9c3',
     date: '11th grade',
-    tags: ['software', 'robotics', 'cad'],
+    tags: ['software', 'robotics'],
     title: 'Programming the 2026–27 VEX season',
     description:
       'Programming the robot in C++ on PROS and learning more advanced concepts like PID control and motor encoders.',
