@@ -68,7 +68,7 @@ actually shows skills/real work, not just school involvement:
 - **Left off entirely:** Code Ninjas (job, not a project), the Portfolio
   Project itself (self-referential), habit/goal tracker (idea stage,
   nothing built)
-- **Exception — v1.3.0 only:** the "Programming the 2026–27 VEX season"
+- **Exception — v1.4.0 only:** the "Programming the 2026–27 VEX season"
   release entry (11th grade, PROS/C++ work, linked to the code repo) is
   allowed. Still no season prep, event lists, roster, or notebook details
   anywhere on the site.
